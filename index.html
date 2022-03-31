@@ -12,10 +12,10 @@
             var currentPage = 1;
             function jumpToPage()
             {
-                document.getElementById("pageNo").value = "";
                 let r = Math.ceil(document.getElementById("pageNo").value / 2);
                 document.getElementById("pageNo").blur();
                 console.log(r)
+                document.getElementById("pageNo").value = "";
                 if(Number.isInteger(r))
                 {
                     currentPage = r;
